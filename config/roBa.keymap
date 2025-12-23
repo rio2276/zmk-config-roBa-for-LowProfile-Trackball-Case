@@ -113,7 +113,7 @@
 &kp LA(LC(LG(NUMBER_1)))  &trans  &trans                      &kp LC(LA(LG(UP_ARROW)))    &kp LA(LC(LG(M)))                                               &trans    &trans          &kp UP_ARROW    &trans           &trans
 &kp LA(LC(LG(NUMBER_2)))  &trans  &kp LA(LC(LG(LEFT_ARROW)))  &kp LA(LC(LG(DOWN_ARROW)))  &kp LA(LC(LG(RIGHT_ARROW)))  &trans      &kp LG(LS(SEMICOLON))  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP
 &kp LA(LC(LG(NUMBER_3)))  &trans  &trans                      &kp LA(LC(LG(P)))           &kp LA(LC(LG(N)))            &trans      &kp LG(MINUS)          &kp END   &trans          &trans          &trans           &kp PAGE_DOWN
-&kp LA(LC(LG(NUMBER_4)))  &trans  &trans                      &trans                      &trans                       &trans      &trans                 &trans                                                     &trans
+&kp LA(LC(LG(NUMBER_4)))  &trans  &trans                      &trans                      &trans                       &trans      &kp DELETE             &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -121,10 +121,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans        &trans            &trans  &trans                                &trans  &trans  &trans    &trans    &trans
-&trans          &trans        &trans            &trans  &trans  &trans                &trans  &trans  &trans  &trans    &mkp MB1  &mkp MB2
-&trans          &trans        &trans            &trans  &trans  &kp LEFT_COMMAND      &trans  &trans  &trans  &mkp MB3  &mkp MB4  &mkp MB5
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &trans  &trans  &trans                &trans  &trans                              &trans
+&trans  &trans        &trans            &trans          &trans                                &trans  &trans  &trans    &trans    &trans
+&trans  &trans        &trans            &trans          &trans  &trans                &trans  &trans  &trans  &trans    &mkp MB1  &mkp MB2
+&trans  &trans        &trans            &trans          &trans  &kp LEFT_COMMAND      &trans  &trans  &trans  &mkp MB3  &mkp MB4  &mkp MB5
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans                &trans  &trans                              &trans
             >;
         };
 
