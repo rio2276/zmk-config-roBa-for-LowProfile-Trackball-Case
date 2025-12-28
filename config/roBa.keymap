@@ -86,8 +86,6 @@
 &kp Z                   &kp X         &kp C             &kp V           &kp B        &kp LEFT_COMMAND      &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &lt 4 LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &lt 2 SPACE  &lt 3 TAB             &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         FUNCTION {
@@ -126,6 +124,8 @@
 &trans  &trans        &trans            &trans          &trans  &kp LEFT_COMMAND      &trans  &trans  &trans  &mkp MB3  &mkp MB4  &mkp MB5
 &trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &trans                &trans  &trans                              &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
         };
 
         SCROLL {
