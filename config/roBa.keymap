@@ -79,12 +79,12 @@
             >;
         };
 
-        FUNCTION {
+        FUNC {
             bindings = <
 &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     &kp BACKSLASH                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans
-&kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON   &kp SQT            &lt 6 ESCAPE          &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE  &trans  &trans
+&kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON   &kp SQT            &kp ESCAPE            &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE  &trans  &trans
 &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp COLON       &kp DOUBLE_QUOTES  &kp LEFT_CONTROL      &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans  &trans
-&lt 4 LG(LS(S))  &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &lt 2 SPACE        &lt 3 TAB             &kp BSPC       &trans                                                         &kp ESC
+&kp LG(LS(S))    &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &trans             &trans                &kp BSPC       &trans                                                         &kp ESC
             >;
         };
 
@@ -130,10 +130,10 @@
 
         BT {
             bindings = <
-&kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp AT_SIGN                              &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3
-&kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON  &kp SQT            &trans        &trans  &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4
-&kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE      &trans  &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_CLR
-&trans           &trans                &trans                 &trans         &trans             &trans        &trans  &trans                                &bt BT_CLR_ALL
+&kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp AT_SIGN                                   &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3
+&kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON  &kp SQT            &trans        &trans       &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4
+&kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE      &bootloader  &trans  &trans  &trans  &bt BT_SEL 2  &trans
+&trans           &trans                &trans                 &trans         &trans             &trans        &trans       &trans                                &trans
             >;
         };
     };
