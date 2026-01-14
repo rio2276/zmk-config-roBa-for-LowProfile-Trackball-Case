@@ -79,7 +79,7 @@
             >;
         };
 
-        layer_1 {
+        function {
             bindings = <
 &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     &kp BACKSLASH                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans  &trans
 &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON   &kp SQT            &lt 6 ESCAPE          &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE  &trans  &trans
