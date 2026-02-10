@@ -95,7 +95,7 @@
 &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp AT_SIGN                                   &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 3
 &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp SEMICOLON  &kp SQT            &trans        &trans       &trans  &trans  &trans  &bt BT_SEL 1  &bt BT_SEL 4
 &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp COLON      &kp DOUBLE_QUOTES  &kp PIPE      &bootloader  &trans  &trans  &trans  &bt BT_SEL 2  &trans
-&trans           &trans                &trans                 &trans         &trans             &trans        &trans       &trans                                &trans
+&trans           &trans                &trans                 &trans         &trans             &trans        &trans       &trans                                &bt BT_CLR
             >;
         };
     };
