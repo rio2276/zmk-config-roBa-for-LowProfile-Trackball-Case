@@ -31,7 +31,7 @@
         compatible = "zmk,combos";
 
         command+shift {
-            bindings = <&kp LG(LEFT_SHIFT)>;
+            bindings = <&kp LG(SPACE)>;
             key-positions = <38 39>;
         };
     };
