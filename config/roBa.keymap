@@ -30,9 +30,14 @@
     combos {
         compatible = "zmk,combos";
 
-        command+shift {
-            bindings = <&kp LG(SPACE)>;
+        kana {
+            bindings = <&kp INTERNATIONAL_4>;
             key-positions = <38 39>;
+        };
+
+        eng {
+            bindings = <&kp INTERNATIONAL_5>;
+            key-positions = <37 38>;
         };
     };
 
