@@ -57,7 +57,7 @@
             bindings = <
 &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN     &kp BACKSLASH                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE  &trans  &trans
 &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp COLON       &kp SQT            &kp ESCAPE            &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE   &trans  &kp AT
-&kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON   &kp DOUBLE_QUOTES  &lt 3 TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans  &trans
+&kp EXCLAMATION  &kp LS(JP_2)     &kp HASH               &kp SEMICOLON   &kp DOUBLE_QUOTES  &lt 3 TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans  &trans
 &kp LG(LS(S))    &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &trans             &kp LEFT_CONTROL      &kp BSPC       &trans                                                          &kp ESC
             >;
         };
