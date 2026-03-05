@@ -5,4 +5,4 @@ include:
  - board: xiao_ble/nrf52840/zmk
    shield: roBa_L
  - board: xiao_ble/nrf52840/zmk
-   shield: settings_reset
+   shield: settings_reset 
