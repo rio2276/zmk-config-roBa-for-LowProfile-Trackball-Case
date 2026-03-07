@@ -39,6 +39,15 @@
         };
     };
 
+/ {
+    behaviors {
+        hscroll: hscroll {
+            compatible = "zmk,behavior-input-two-axis";
+            label = "HSCROLL";
+        };
+    };
+};
+
     keymap {
         compatible = "zmk,keymap";
 
