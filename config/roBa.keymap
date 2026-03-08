@@ -46,12 +46,6 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
-
-        enc_noop: enc_noop {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&none>, <&none>;
-        };
     };
 };
 
