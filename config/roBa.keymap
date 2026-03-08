@@ -41,9 +41,16 @@
 
 / {
     behaviors {
-        hscroll: hscroll {
-            compatible = "zmk,behavior-input-two-axis";
-            label = "HSCROLL";
+        enc_scroll: enc_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+
+        enc_noop: enc_noop {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
         };
     };
 };
@@ -59,7 +66,7 @@
 &lt 4 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 2 SPACE  &kp LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&enc_scroll MOVE_Y(8) MOVE_Y(-8)>;
         };
 
         FUNC {
@@ -78,6 +85,8 @@
 &kp F1                &kp F2        &kp F3            &kp F12         &trans  &lt 3 TAB             &kp MINUS     &kp NUMBER_1  &kp NUMBER_2  &kp N3        &kp ASTERISK  &kp SLASH
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp NUMBER_0  &kp PERIOD                                              &kp CARET
             >;
+
+            sensor-bindings = <&enc_scroll MOVE_X(8) MOVE_X(-8)>;
         };
 
         ARROW {
