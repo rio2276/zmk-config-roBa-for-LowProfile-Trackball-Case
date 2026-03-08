@@ -58,7 +58,7 @@
 &lt 4 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 2 SPACE  &kp LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
-             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+             sensor-bindings = <&enc_scroll MOVE_Y(-8) MOVE_Y(8)>;
         };
 
         FUNC {
@@ -87,7 +87,7 @@
 &kp LA(LC(LG(NUMBER_4)))  &trans  &trans                      &trans                      &trans                       &kp LEFT_CONTROL      &kp DELETE             &trans                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&enc_scroll MOVE_X(-8) MOVE_X(8)>;
         };
 
         MOUSE {
