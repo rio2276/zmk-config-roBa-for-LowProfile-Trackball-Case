@@ -39,7 +39,6 @@
         };
     };
 
-/ {
     behaviors {
         enc_scroll: enc_scroll {
             compatible = "zmk,behavior-sensor-rotate-var";
@@ -47,7 +46,6 @@
             bindings = <&msc>, <&msc>;
         };
     };
-};
 
     keymap {
         compatible = "zmk,keymap";
