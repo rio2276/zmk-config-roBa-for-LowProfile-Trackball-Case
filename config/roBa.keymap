@@ -39,28 +39,6 @@
         };
     };
 
-    behaviors {
-        enc_scroll_v: enc_scroll_v {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <30>;
-        };
-    
-        enc_scroll_h: enc_scroll_h {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-            tap-ms = <30>;
-        };
-    
-        enc_none: enc_none {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&none>, <&none>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -82,6 +60,8 @@
 &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON   &kp DOUBLE_QUOTES  &lt 3 TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans  &trans
 &kp LG(LS(S))    &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &trans             &kp LEFT_CONTROL      &kp BSPC       &trans                                                          &kp ESC
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
@@ -102,7 +82,6 @@
 &kp LA(LC(LG(NUMBER_3)))  &trans  &trans                      &kp LA(LC(LG(P)))           &kp LA(LC(LG(N)))            &trans                &kp LG(MINUS)          &kp END   &trans          &trans          &trans           &kp PAGE_DOWN
 &kp LA(LC(LG(NUMBER_4)))  &trans  &trans                      &trans                      &trans                       &kp LEFT_CONTROL      &kp DELETE             &trans                                                     &trans
             >;
-
         };
 
         MOUSE {
