@@ -39,22 +39,6 @@
         };
     };
 
-    behaviors {
-    enc_scroll_v: enc_scroll_v {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        tap-ms = <10>;
-    };
-
-    enc_scroll_h: enc_scroll_h {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-        tap-ms = <10>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -66,7 +50,6 @@
 &lt 4 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 2 SPACE  &kp LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
-            sensor-bindings = <&enc_scroll_v>;
         };
 
         FUNC {
@@ -77,7 +60,6 @@
 &kp LG(LS(S))    &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &trans             &kp LEFT_CONTROL      &kp BSPC       &trans                                                          &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
