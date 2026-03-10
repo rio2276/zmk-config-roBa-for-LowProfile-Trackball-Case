@@ -68,7 +68,6 @@
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp NUMBER_0  &kp PERIOD                                              &kp CARET
             >;
 
-            sensor-bindings = <&enc_scroll_h>;
         };
 
         ARROW {
