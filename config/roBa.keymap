@@ -39,6 +39,22 @@
         };
     };
 
+    behaviors {
+    enc_scroll_v: enc_scroll_v {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        tap-ms = <30>;
+    };
+
+    enc_scroll_h: enc_scroll_h {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+        tap-ms = <30>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
