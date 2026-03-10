@@ -40,10 +40,24 @@
     };
 
     behaviors {
-        enc_scroll: enc_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
+        enc_scroll_v: enc_scroll_v {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <30>;
+        };
+    
+        enc_scroll_h: enc_scroll_h {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+            tap-ms = <30>;
+        };
+    
+        enc_none: enc_none {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&none>, <&none>;
         };
     };
 
@@ -58,7 +72,7 @@
 &lt 4 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 2 SPACE  &kp LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
-             sensor-bindings = <&enc_scroll MOVE_Y(-8) MOVE_Y(8)>;
+            sensor-bindings = <&enc_scroll_v>;
         };
 
         FUNC {
@@ -78,7 +92,7 @@
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp NUMBER_0  &kp PERIOD                                              &kp CARET
             >;
 
-            sensor-bindings = <&enc_scroll MOVE_X(-8) MOVE_X(8)>;
+            sensor-bindings = <&enc_scroll_h>;
         };
 
         ARROW {
