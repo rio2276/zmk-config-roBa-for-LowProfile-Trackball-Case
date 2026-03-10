@@ -49,7 +49,6 @@
 &kp Z            &kp X         &kp C             &kp V           &kp B        &lt 3 TAB             &kp B          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &lt 4 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 2 SPACE  &kp LEFT_CONTROL      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
-
         };
 
         FUNC {
@@ -59,7 +58,6 @@
 &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON   &kp DOUBLE_QUOTES  &lt 3 TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans  &trans
 &kp LG(LS(S))    &kp LALT              &kp LGUI               &kp LEFT_SHIFT  &trans             &kp LEFT_CONTROL      &kp BSPC       &trans                                                          &kp ESC
             >;
-
         };
 
         NUM {
