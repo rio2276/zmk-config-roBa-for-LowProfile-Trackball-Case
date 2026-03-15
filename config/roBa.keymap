@@ -10,6 +10,7 @@
 
 &trackball {
     //automouse-layer = <4>;
+
     scroll-layers = <5>;
 
     // arrows {
@@ -89,7 +90,7 @@
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp N0     &kp DOT                                &kp ESC
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         ARROW {
