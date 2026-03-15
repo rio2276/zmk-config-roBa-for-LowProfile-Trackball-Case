@@ -88,6 +88,8 @@
 &kp F1                &kp F2        &kp F3        &kp F12         &trans  &kp TAB               &trans     &kp N1   &kp N2  &kp N3  &kp ASTERISK  &kp FSLH
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp N0     &kp DOT                                &kp ESC
             >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         ARROW {
