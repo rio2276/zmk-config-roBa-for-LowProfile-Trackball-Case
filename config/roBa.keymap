@@ -41,15 +41,6 @@
         };
     };
 
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -88,7 +79,7 @@
             bindings = <
 &kp F7                &kp F8        &kp F9        &kp F10         &trans                                       &kp N7   &kp N8  &kp N9  &kp LS(SEMICOLON)  &kp INT_YEN
 &kp F4                &kp F5        &kp F6        &kp F11         &trans  &kp ESCAPE            &kp LS(MINUS)  &kp N4   &kp N5  &kp N6  &kp EQUAL          &kp MINUS
-&kp F1                &kp F2        &kp F3        &kp F12         &trans  &kp TAB               &kp BSLH       &kp N1   &kp N2  &kp N3  &kp LS(SQT)        &kp FSLH
+&kp F1                &kp F2        &kp F3        &kp F12         &trans  &kp TAB               &trans         &kp N1   &kp N2  &kp N3  &kp LS(SQT)        &kp FSLH
 &kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp N0         &kp DOT                                     &kp ESC
             >;
 
@@ -106,10 +97,10 @@
 
         MOUSE {
             bindings = <
-&trans    &kp UNDERSCORE   &trans        &kp LC(V)       &kp LC(C)                                       &trans      &kp UP_ARROW  &trans     &trans    &trans
-&trans    &kp UNDER        &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &kp LEFT    &kp DOWN      &kp RIGHT  &mkp MB1  &mkp MB2
-&kp NUBS  &kp NON_US_BSLH  &trans        &trans          &trans     &trans                &trans         &trans      &trans        &mkp MB3   &mkp MB4  &mkp MB5
-&trans    &kp LEFT_ALT     &kp LEFT_GUI  &kp LEFT_SHIFT  &trans     &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                                     &kp ESCAPE
+&trans  &trans        &kp LC(X)     &kp LC(V)       &kp LC(C)                                       &trans      &kp UP_ARROW  &trans     &trans    &trans
+&trans  &trans        &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &kp LEFT    &kp DOWN      &kp RIGHT  &mkp MB1  &mkp MB2
+&trans  &trans        &trans        &trans          &trans     &trans                &trans         &trans      &trans        &mkp MB3   &mkp MB4  &mkp MB5
+&trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans     &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                                     &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
