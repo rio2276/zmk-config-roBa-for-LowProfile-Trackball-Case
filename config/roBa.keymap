@@ -77,19 +77,19 @@
 
         ARROW {
             bindings = <
-&kp LA(LC(LG(NUMBER_1)))  &trans  &trans                &kp LA(LC(LG(UP_ARROW)))  &kp LA(LC(LG(M)))                                        &trans    &kp UP_ARROW  &trans     &trans    &trans
-&kp LA(LC(LG(NUMBER_2)))  &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(RIGHT)))  &trans                &trans      &kp LEFT  &kp DOWN      &kp RIGHT  &kp HOME  &kp PAGE_UP
-&kp LA(LC(LG(NUMBER_3)))  &trans  &trans                &kp LG(LS(RIGHT_ARROW))   &kp LA(LC(LG(N)))      &trans                &trans      &trans    &trans        &trans     &kp END   &kp PAGE_DOWN
-&kp LA(LC(LG(NUMBER_4)))  &trans  &trans                &kp LEFT_SHIFT            &trans                 &kp LEFT_CONTROL      &kp DELETE  &trans                                       &kp ESCAPE
+&kp LA(LC(LG(NUMBER_1)))  &trans  &trans                &kp LA(LC(LG(UP_ARROW)))  &kp LA(LC(LG(M)))                                          &trans    &trans    &kp UP_ARROW  &trans     &trans
+&kp LA(LC(LG(NUMBER_2)))  &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(RIGHT)))  &trans                &kp LS(HOME)  &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_UP
+&kp LA(LC(LG(NUMBER_3)))  &trans  &trans                &kp LG(LS(RIGHT_ARROW))   &kp LA(LC(LG(N)))      &trans                &kp LS(END)   &kp END   &trans    &trans        &trans     &kp PAGE_DOWN
+&kp LA(LC(LG(NUMBER_4)))  &trans  &trans                &kp LEFT_SHIFT            &trans                 &kp LEFT_CONTROL      &kp DELETE    &trans                                       &kp ESCAPE
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans        &kp LC(X)     &kp LC(V)       &kp LC(C)                                       &trans      &kp UP_ARROW  &trans     &trans    &trans
-&trans  &trans        &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &kp LEFT    &kp DOWN      &kp RIGHT  &mkp MB1  &mkp MB2
-&trans  &trans        &trans        &trans          &trans     &trans                &trans         &trans      &trans        &mkp MB3   &mkp MB4  &mkp MB5
-&trans  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans     &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                                     &kp ESCAPE
+&kp DEL        &trans        &kp LC(X)     &kp LC(V)       &kp LC(C)                                       &trans      &trans  &trans    &trans    &trans
+&kp BACKSPACE  &trans        &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &trans      &trans  &trans    &mkp MB1  &mkp MB2
+&trans         &trans        &trans        &trans          &trans     &trans                &trans         &trans      &trans  &mkp MB3  &mkp MB4  &mkp MB5
+&trans         &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                              &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
