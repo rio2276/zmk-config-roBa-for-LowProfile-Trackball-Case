@@ -93,6 +93,8 @@
 &kp LA(LC(LG(NUMBER_3)))  &trans  &trans                &kp LG(LS(RIGHT_ARROW))   &kp LA(LC(LG(N)))      &trans                &kp LS(END)   &kp END   &trans    &trans        &trans     &kp PAGE_DOWN
 &kp LA(LC(LG(NUMBER_4)))  &trans  &trans                &kp LEFT_SHIFT            &trans                 &kp LEFT_CONTROL      &kp DELETE    &trans                                       &kp ESCAPE
             >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         MOUSE {
