@@ -64,7 +64,8 @@
                 <&tog_off 0 &tog_off 1 &tog_off 2 &tog_off 3 &tog_off 4 &tog_off 5 &tog_off 6 &tog_off 7 &tog_off 8 &tog_off 9 &tog_off 10>,
                 <&macro_wait_time 200>,
                 <&bt BT_SEL 0>,
-                <&macro_wait_time 500>;
+                <&macro_wait_time 2000>,
+                <&tog_on 0>;
 
             label = "BT_WIN";
         };
@@ -72,7 +73,12 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 500>, <&to 7>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2 &tog_off 3 &tog_off 4 &tog_off 5 &tog_off 6 &tog_off 7 &tog_off 8 &tog_off 9 &tog_off 10>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 2000>,
+                <&tog_on 7>;
 
             label = "BT_MAC";
         };
