@@ -79,19 +79,19 @@
 
         win_1 {
             bindings = <
-&kp Q            &kp W         &kp E         &kp R                           &kp T                                                             &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&kp A            &kp S         &kp D         &kp F                           &kp G        &lt 10 ESCAPE                         &kp LS(MINUS)  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
-&kp Z            &kp X         &kp C         &kp V                           &kp B        &lt 3 TAB                             &lt 10 B       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 8 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
+&kp Q            &kp W             &kp E         &kp R                           &kp T                                                             &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&kp A            &kp S             &kp D         &kp F                           &kp G        &lt 10 ESCAPE                         &kp LS(MINUS)  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&kp Z            &kp X             &kp C         &kp V                           &kp B        &lt 3 TAB                             &lt 10 B       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 8 LA(GRAVE)  &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4      &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
         };
 
         win_2 {
             bindings = <
-&kp LS(N7)       &kp LS(N8)    &kp LS(N9)    &trans          &kp LS(LEFT_BRACKET)                                       &kp LS(N8)             &kp LS(N9)         &trans       &kp DOLLAR   &kp LEFT_BRACKET
-&kp DOLLAR       &kp PERCENT   &kp CARET     &kp SQT         &kp AT_SIGN           &kp ESCAPE            &kp SQT        &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp AT_SIGN  &kp PERCENT  &kp EQUAL
-&kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp SEMICOLON   &kp LS(N7)            &kp TAB               &kp SEMICOLON  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(N7)   &kp CARET    &kp LS(EQUAL)
-&kp LG(LS(S))    &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans                &kp LEFT_CONTROL      &kp BACKSPACE  &trans                                                              &kp ESCAPE
+&kp LS(N7)       &kp LS(N8)        &kp LS(N9)    &trans          &kp LS(LEFT_BRACKET)                                       &kp LS(N8)             &kp LS(N9)         &trans       &kp DOLLAR   &kp LEFT_BRACKET
+&kp DOLLAR       &kp PERCENT       &kp CARET     &kp SQT         &kp AT_SIGN           &kp ESCAPE            &kp SQT        &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp AT_SIGN  &kp PERCENT  &kp EQUAL
+&kp EXCLAMATION  &kp AT_SIGN       &kp HASH      &kp SEMICOLON   &kp LS(N7)            &kp TAB               &kp SEMICOLON  &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(N7)   &kp CARET    &kp LS(EQUAL)
+&kp LG(LS(S))    &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans                &kp LEFT_CONTROL      &kp BACKSPACE  &trans                                                              &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
@@ -99,10 +99,10 @@
 
         win_3 {
             bindings = <
-&kp F7                &kp F8        &kp F9        &kp F10         &trans                                       &kp N7   &kp N8  &kp N9  &kp LS(SEMICOLON)  &kp INT_YEN
-&kp F4                &kp F5        &kp F6        &kp F11         &trans  &kp ESCAPE            &kp LS(MINUS)  &kp N4   &kp N5  &kp N6  &kp EQUAL          &kp MINUS
-&kp F1                &kp F2        &kp F3        &kp F12         &trans  &kp TAB               &kp COLON      &kp N1   &kp N2  &kp N3  &kp LS(SQT)        &kp FSLH
-&kp LG(LS(NUMBER_4))  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp N0         &kp DOT                                     &kp ESC
+&kp F7                &kp F8            &kp F9        &kp F10         &trans                                       &kp N7   &kp N8  &kp N9  &kp LS(SEMICOLON)  &kp INT_YEN
+&kp F4                &kp F5            &kp F6        &kp F11         &trans  &kp ESCAPE            &kp LS(MINUS)  &kp N4   &kp N5  &kp N6  &kp EQUAL          &kp MINUS
+&kp F1                &kp F2            &kp F3        &kp F12         &trans  &kp TAB               &kp COLON      &kp N1   &kp N2  &kp N3  &kp LS(SQT)        &kp FSLH
+&kp LG(LS(NUMBER_4))  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT  &trans  &kp LEFT_CONTROL      &kp N0         &kp DOT                                     &kp ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -119,10 +119,10 @@
 
         mac_1 {
             bindings = <
-&kp Q            &kp W     &kp E     &kp R                 &kp T                                               &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt LEFT_ALT A   &kp S     &kp D     &kp F                 &kp G        &lt 10 ESCAPE               &kp EQUAL  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
-&kp Z            &kp X     &kp C     &kp V                 &kp B        &lt 7 TAB                   &lt 10 B   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&lt 8 LC(SPACE)  &kp LALT  &kp LGUI  &mt LEFT_SHIFT LANG2  &lt 6 SPACE  &mt LEFT_CONTROL LANG1      &kp BSPC   &lt 5 ENTER                             &kp ESC
+&kp Q            &kp W             &kp E         &kp R                 &kp T                                               &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&mt LEFT_ALT A   &kp S             &kp D         &kp F                 &kp G        &lt 10 ESCAPE               &kp EQUAL  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&kp Z            &kp X             &kp C         &kp V                 &kp B        &lt 7 TAB                   &lt 10 B   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&lt 8 LC(SPACE)  &kp LEFT_COMMAND  &kp LEFT_ALT  &mt LEFT_SHIFT LANG2  &lt 6 SPACE  &mt LEFT_CONTROL LANG1      &kp BSPC   &lt 5 ENTER                             &kp ESC
             >;
         };
 
@@ -131,16 +131,16 @@
 &kp APOS              &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &kp DOLLAR     &kp AT
 &kp DOLLAR            &kp PERCENT           &kp AMPERSAND          &kp COLON      &kp DOUBLE_QUOTES  &kp ESCAPE      &kp COLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp PERCENT    &kp CARET
 &kp EXCLAMATION       &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON  &kp APOS           &kp TAB         &kp SEMI   &kp LBKT              &kp RBKT               &kp APOS           &kp AMPERSAND  &kp TILDE
-&kp LS(LC(NUMBER_4))  &kp LALT              &kp LGUI               &kp LSHFT      &trans             &kp LCTRL       &kp BSPC   &trans                                                                         &kp ESC
+&kp LS(LC(NUMBER_4))  &kp LEFT_COMMAND      &kp LEFT_ALT           &kp LSHFT      &trans             &kp LCTRL       &kp BSPC   &trans                                                                         &kp ESC
             >;
         };
 
         mac_3 {
             bindings = <
-&kp F7  &kp F8    &kp F9    &kp F10    &trans                            &kp N7   &kp N8  &kp N9  &kp PLUS      &trans
-&kp F4  &kp F5    &kp F6    &kp F11    &trans  &trans         &kp EQUAL  &kp N4   &kp N5  &kp N6  &kp CARET     &kp MINUS
-&kp F1  &kp F2    &kp F3    &kp F12    &trans  &trans         &kp COLON  &kp N1   &kp N2  &kp N3  &kp ASTERISK  &kp FSLH
-&trans  &kp LALT  &kp LGUI  &kp LSHFT  &trans  &kp LCTRL      &kp N0     &kp DOT                                &kp ESC
+&kp F7  &kp F8            &kp F9        &kp F10    &trans                            &kp N7   &kp N8  &kp N9  &kp PLUS      &trans
+&kp F4  &kp F5            &kp F6        &kp F11    &trans  &trans         &kp EQUAL  &kp N4   &kp N5  &kp N6  &kp CARET     &kp MINUS
+&kp F1  &kp F2            &kp F3        &kp F12    &trans  &trans         &kp COLON  &kp N1   &kp N2  &kp N3  &kp ASTERISK  &kp FSLH
+&trans  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LSHFT  &trans  &kp LCTRL      &kp N0     &kp DOT                                &kp ESC
             >;
         };
 
@@ -149,16 +149,16 @@
 &trans  &kp LA(LC(LG(N)))     &kp LA(LC(LG(UP_ARROW)))  &kp LA(LC(LG(P)))      &trans                                           &trans         &trans    &kp UP_ARROW  &trans     &trans
 &trans  &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(RIGHT)))  &trans  &trans                &kp LC(LS(LEFT))   &kp LC(LEFT)   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_UP
 &trans  &trans                &trans                    &trans                 &trans  &trans                &kp LC(LS(RIGHT))  &kp LC(RIGHT)  &trans    &trans        &trans     &kp PAGE_DOWN
-&trans  &kp LEFT_ALT          &kp LEFT_GUI              &kp LEFT_SHIFT         &trans  &kp LEFT_CONTROL      &trans             &trans                                            &kp ESCAPE
+&trans  &kp LEFT_COMMAND      &kp LEFT_ALT              &kp LEFT_SHIFT         &trans  &kp LEFT_CONTROL      &trans             &trans                                            &kp ESCAPE
             >;
         };
 
         MOUSE {
             bindings = <
-&kp DEL        &trans        &kp LC(X)     &kp LC(V)       &kp LC(C)                                       &trans      &trans  &trans    &mkp MB2  &trans
-&kp BACKSPACE  &trans        &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &trans      &trans  &mkp MB1  &mkp MB1  &mkp MB2
-&trans         &trans        &trans        &trans          &trans     &trans                &trans         &trans      &trans  &mkp MB3  &mkp MB4  &mkp MB5
-&trans         &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                              &kp ESCAPE
+&kp DEL        &trans            &kp LC(X)     &kp LC(V)       &kp LC(C)                                       &trans      &trans  &trans    &mkp MB2  &trans
+&kp BACKSPACE  &trans            &trans        &kp LC(Y)       &kp LC(Z)  &trans                &trans         &trans      &trans  &mkp MB1  &mkp MB1  &mkp MB2
+&trans         &trans            &trans        &trans          &trans     &trans                &trans         &trans      &trans  &mkp MB3  &mkp MB4  &mkp MB5
+&trans         &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp ENTER  &kp LEFT_CONTROL      &kp BACKSPACE  &kp DELETE                              &kp ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
